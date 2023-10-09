@@ -15,6 +15,7 @@ header{
     justify-content: space-between;
     max-width: 100%;
     background-color: #fcfcfc;
+    padding-right: 5rem;
 }
 
 .logo{
@@ -46,7 +47,6 @@ header{
     font-size: 1.3rem;
 }
 
-
 /*nav*/
 
 /*body*/
@@ -54,6 +54,8 @@ header{
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(223, 223, 223);
+    min-height: 100vh;
 }
 
 .persona{
@@ -74,7 +76,6 @@ body{
     font-size:2rem;
     background:rgba(78, 74, 74, 0.3);
     color: white;
-    position: absolute;
 }
 
 .carrousel{
@@ -224,54 +225,40 @@ legend{
 
 /*sobre nosotros*/
 
-
-.contenedorpreguntas {
-    width: 70%;
-    margin: 100px auto;
-}
-
-.contenedorpyr {
+.preguntasfrecuentes{
+    position: absolute;
+    width: 100%;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 0 15px -1px rgba(0,0,0,.2);
-    border-radius: 10px;
-    padding: 2rem;
+    padding: 20px;
+    font-weight: 900;
+    font-size:2rem;
+    background:rgba(129, 158, 255, 0.3);
 }
 
-.pregunta {
+.accordion-header button{
+    font-size: 1.7rem;
+}
+
+.accordion {
+    width: 70%;
+    margin: auto;
+    font-size: 1.2rem;
+    padding-top: 8rem;
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(148, 170, 243);
-    padding: 1,25rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-
-.respuesta li{
-    text-align: left;
-    font-size: 1,25rem;
-}
-
-.respuesta p {
-    font-size: 2rem;
-}
-
-.titulo h3{
-    margin-top: 1rem;
 }
 
 /*footer*/
 
-footer {
-    background-color: rgb(211, 211, 211);
+.container-footer {
+    background-color: white;
     text-align: center;
     width:100%;
     padding: 1rem;
-    margin-top: 2rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    margin-top: 5rem;
 }
 
 .copyright {
