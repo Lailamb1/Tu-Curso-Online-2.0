@@ -61,40 +61,37 @@
 
     <!-- ZONA DE FORMULARIO -->
 
-    <div class="contenedor">
-        
-            <div class="form">
-                <div class = "cuadrado">
-                    <legend>Iniciar Sesion</legend>
+    <title>Login</title>
+</head>
+<body>
 
-                    <div class="contenedorDiv">
+    <div class="login-container">
+        <div class="login-info-container">
+            <h1 class="title">Log in with</h1>
+            <div class="social-login">
 
-                        <div class="campo">
-                            <label for="">Nombre de usuario</label>
-                            <input type="text" name="nombre" class="nombre" placeholder="Usuario">
-                        </div>
+                <a href="https://www.google.com" class="social-login-element">
+                    <img src="../img/google.jpg" alt="google-image">
+                    <span>Google</span>
+                </a>
 
-                        <div class="campo">
-                            <label for="">Contraseña</label>
-                            <input type="text" name="nombre" class="nombre" placeholder="Contraseña">
-                        </div>
-
-
-                    </div>
-
-                    <div class="boton">
-                            <h3>
-                                <a href="../index.html" class="button">Iniciar Sesion</a>
-                            </h3>
-                            <h4>
-                                <a href="./Registrarse.html" class="button">¿No tienes cuenta? ¡Registrate!</a>
-                            </h4>
-                            
-                    </div>
-                </div>
+                <a href="https://www.facebook.com" class="social-login-element">
+                    <img src="../img/facebook.jpg" alt="google-image">
+                    <span>Facebook</span>
+                </a>
 
             </div>
+            <p>or</p>
+            <form class="inputs-container">
+                <input class="input" type="text" placeholder="Username">
+                <input class="input" type="text" placeholder="Password">
+                <p>Forgot password? <span class="span">Click here</span></p>
+                <button class="btn">login</button>
+                <p>¿No tienes cuenta? <a href="Registrarse.html" class = "botoncitos">Regístrate</a></p>
+            </form>
+        </div>
 
+        <img class="image-container" src="../img/login.png" alt="">
     </div>
 
     <!-- ZONA DE FORMULARIO -->

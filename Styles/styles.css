@@ -1,7 +1,6 @@
 /*Media Queries*/
 
 
-
 /*index*/
 
 *{
@@ -60,9 +59,27 @@ body{
     padding: 0;
     background-color: rgb(223, 223, 223);
     min-height: 100vh;
+    
+}
+
+
+
+.carrousel{
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .persona{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.persona2{
     display: block;
     margin: auto;
     max-width: 100%;
@@ -80,14 +97,6 @@ body{
     font-size:2rem;
     background:rgba(78, 74, 74, 0.3);
     color: white;
-}
-
-.carrousel{
-    position: relative;
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .seccion{
@@ -116,10 +125,7 @@ body{
 .contenedor-cursos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 30px;
+    justify-content: space-around;
 }
 
 .cursos{
@@ -156,70 +162,186 @@ form fieldset{
     padding: 1rem;
 }
 
+/*ZONA TRABAJO*/
+
 /*ingresar*/
 
-legend{
-    text-align: center;
-    color: black;
-    font-size: 2rem;
-    padding: 1rem;
-    padding-top: 2rem;
-    font-weight: 900;
-    text-transform: uppercase;
+:root{
+    --login-bg:#f8f3ff;
+    --title-bg: #9089cc;
+    --button-bg: #674baf;
+    --light-pink: #e882e8;
+    --image-bg:  #eadbff ;
 }
 
-.form{background-color: rgb(148, 170, 243);
-    border-radius: 1rem;
-    justify-content: center;
+.login-container {
+    height: 43.75em;
+    width: 60em;
+    margin: 6em auto;
+    border-radius: 10px;
     display: flex;
-    place-items: center;
-    width: 30%;
-    margin: 50px auto;
+    justify-content: space-between;
+    overflow: hidden;
     
 }
 
-.campo{
-    margin-bottom: 1rem;
+.login-info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-
+    padding-top: 0.5rem;
+    background-color: var(--login-bg);
 }
 
-.campo label{
-    color: black;
-    font-weight: bold;
-    margin: 1,25rem;
-    font-size: 2rem;
-    display: block;
+.image-container {
+    width: 50%;
+    padding: 3rem 1rem 3rem 1rem;
+    background-color: var(--image-bg);
 }
 
-.campo input{
-    background-color: white;
+.title {
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--title-bg);
+    padding: 1rem;
+}
+
+.social-login {
     width: 100%;
-    border: none;
-    border-radius: 2rem;
-    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.social-login-element {
+    width: 12.5rem;
+    height: 3.75rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    border: 1px solid var(--button-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     color: black;
-    text-align: center;
-    font-weight: 1000;
-    font-size: 1rem;
 }
 
-.boton{
-    text-align: center;
+.social-login-element img {
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: 0;
+    left: -0.625rem;
 }
 
-.contenedorS{
-    font-size: xx-large;
-    text-align: center;
+.social-login-element:hover {
+    background-color: #fff;
 }
 
-.boton{
-    font-size: medium;
+.login-info-container > p {
+    font-size: 1.25em;
+    margin-top: 1.5em;
 }
 
-.cuadrado{
-    width: 80%
+.inputs-container {
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.input, .btn {
+    width: 90%;
+    height: 3.125rem;
+    font-size: 1em;
+}
+
+.input {
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.input:hover {
+    border: 2px solid var(--button-bg);
+}
+
+.btn {
+    width: 80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    cursor: pointer;
+}
+
+.inputs-container p {
+    margin: 0;
+}
+
+.span {
+    color: var(--light-pink);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a.botoncitos{
+    color: var(--light-pink);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+    .login-container {
+        width: 70%;
+        margin-top: 3rem;
+    }
+    .login-info-container {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .image-container {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 650px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-container {
+        height: 90%;
+    }
+
+    .social-login {
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+    }
+
+    .login-info-container > p {
+        margin: 0;
+    }
+}
+
+/*ingresar
 
 /* registro */
 
