@@ -111,7 +111,13 @@ body{
 
 .articulo-principal{
     border-top: solid 1px #ebebeb;
-    padding: 1rem;
+}
+
+.articulo-principal p{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
 }
 
 .articulo-imagen{
@@ -136,10 +142,18 @@ body{
     display: flex;
 }
 
-.descripcion {
-    text-align: center;
-    font-size: 20px;
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    font-weight: bold;
 }
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 
 form fieldset{
     border:none;
@@ -160,7 +174,93 @@ form fieldset{
     padding: 1rem;
 }
 
-/*ZONA TRABAJO*/
+/*ZONA OPINIONES*/
+
+.opiniones {
+    text-align: center;
+    padding: 5px;
+    background-color: #f8f8f8;
+}
+.opiniones h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.opiniones ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.opiniones li {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.opiniones img {
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+.opiniones p {
+    font-size: 16px;
+    color: #444;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.nombre {
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+/*CALL TO ACTION*/
+
+.pregunta{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.calltoaction{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.questions__copy{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+}
+
+.subtitle {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.botoncito {
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/*CALL TO ACTION*/
 
 /*ingresar*/
 
@@ -265,6 +365,7 @@ form fieldset{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .inputs-container input{
@@ -274,8 +375,6 @@ form fieldset{
     margin: 1rem;
 }
 
-
-*/
 
 .input {
     padding-left: 20px;
