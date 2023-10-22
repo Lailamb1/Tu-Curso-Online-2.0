@@ -62,8 +62,6 @@ body{
     
 }
 
-
-
 .carrousel{
     position: relative;
     display: inline-block;
@@ -182,7 +180,6 @@ form fieldset{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    
 }
 
 .login-info-container {
@@ -193,6 +190,18 @@ form fieldset{
     text-align: center;
     padding-top: 0.5rem;
     background-color: var(--login-bg);
+}
+
+.login-info-container .btn {
+    width: 80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    cursor: pointer;
+    padding-top: 0.8rem;
 }
 
 .image-container {
@@ -258,11 +267,15 @@ form fieldset{
     align-items: center;
 }
 
-.input, .btn {
-    width: 90%;
-    height: 3.125rem;
+.inputs-container input{
+    width: 80%;
+    min-height: 3.125rem;
     font-size: 1em;
+    margin: 1rem;
 }
+
+
+*/
 
 .input {
     padding-left: 20px;
@@ -275,17 +288,6 @@ form fieldset{
 
 .input:hover {
     border: 2px solid var(--button-bg);
-}
-
-.btn {
-    width: 80%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--button-bg);
-    cursor: pointer;
 }
 
 .inputs-container p {
@@ -343,16 +345,165 @@ a.botoncitos{
 
 /*ingresar
 
-/* registro */
+/* REGISTRO */
 
-.legend2{
-    text-align: left;
-    font-size: 1,25rem;
+.register-container {
+    height: 65rem;
+    width: 60em;
+    margin: 6em auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
-.checkbox{
-    font-size: large;
+.register-info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: var(--login-bg);
+}
+
+.register-info-container .btn{
+    width: 70%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    cursor: pointer;
+    margin-top: 1.7rem;
+    padding: 1rem;
+}
+
+.register-info-container p{
+    padding-bottom: 1rem;
+}
+
+.image-container {
+    width: 50%;
+    padding: 3rem 1rem 3rem 1rem;
+    background-color: var(--image-bg);
+}
+
+.title {
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--title-bg);
+    padding: 1rem;
+}
+
+
+.register-info-container > p {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+}
+
+.inputs-container {
+    height: 55%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input {
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.date {
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.input:hover {
+    border: 2px solid var(--button-bg);
+}
+
+.date:hover {
+    border: 2px solid var(--button-bg);
+}
+
+.inputs-container p {
+    margin: 0;
+}
+
+.span {
+    color: var(--light-pink);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a.botoncitos{
+    color: var(--light-pink);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.inputs-container, .checkbox-div{
+    width: 100%;
+}
+
+.checkbox-div{
     text-align: left;
+}
+
+.checkbox label{
+    padding-left: 2rem;
+}
+
+.checkbox p{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .register-container {
+        width: 70%;
+        margin-top: 3rem;
+    }
+    .register-info-container {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .image-container {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 650px) {
+    .register-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .register-container {
+        height: 90%;
+    }
+
+    .register-info-container > p {
+        margin: 0;
+    }
 }
 
 /*sobre nosotros*/
