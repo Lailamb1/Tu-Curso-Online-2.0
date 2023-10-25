@@ -103,6 +103,132 @@ body{
         
 }
 
+
+
+/*ZONA QUE ESPERAR*/
+
+.queesperar{
+    text-align: center;
+    background-color: white;
+}
+
+.titulo{
+    padding: 50px 0 45px;
+    h2{
+        text-align: center; 
+        font-family: 'Roboto Slab', serif;
+        font-size: 35px;
+    }
+}
+
+.items-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 200px;
+    margin-left: 200px;
+
+    .items{
+        margin-bottom: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column; // Cambia la dirección de los elementos hijos (h3 y p)
+        text-align: left;
+        background-color: white;
+
+        i{
+            font-size: 50px; /* Establece el tamaño de fuente de los íconos */
+            display: block;
+            text-align: center;
+            color: #b0b0b0;
+            position: absolute;
+        }
+
+        li{
+            font-size: 20px;
+            text-align: center;
+            display: block;
+            position: relative;
+        }
+
+        h3{
+            font-size: 20px;
+            margin: 0;
+            margin-left: 80px;
+        }
+
+        p{
+            font-size: 16px;
+            color: #444;
+            font-family: 'Signika Negative', sans-serif;
+            text-align: left;
+            margin-left: 80px;
+        }
+    
+    }
+
+    .row{
+        flex-basis: calc(50% - 10px); /* Para dos columnas con espacio entre ellas */
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: white;
+        box-sizing: border-box;
+        display: flex;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .items-container {
+        flex-direction: column;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .row {
+        flex-basis: 100%;
+    }
+}
+
+/*ZONA QUE ESPERAR*/
+
+/*CALL TO ACTION*/
+
+.calltoaction{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-top: 16px;
+
+    .pregunta{
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .questions__copy{
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 20px;
+    }
+
+    .botoncito {
+        display: inline-block;
+        background-color: #2091F9;
+        justify-self: center;
+        color: #fff;
+        text-decoration: none;
+        padding: 13px 30px;
+        border-radius: 32px;
+    }
+    
+}
+
+/*CALL TO ACTION*/
+
 /*ZONA CURSOS*/
 
 .contenedor-cursos{
@@ -150,7 +276,7 @@ body{
     padding: 5px;
     background-color: #f8f8f8;
 
-    h2{
+    h4{
         font-size: 24px;
         color: #333;
         margin-top: 1rem;
@@ -198,42 +324,6 @@ body{
 }
 
 /*ZONA OPINIONES*/
-
-/*CALL TO ACTION*/
-
-.calltoaction{
-    display: grid;
-    gap: 2em;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    background-color: white;
-
-    .pregunta{
-        text-align: center;
-        font-family: 'Roboto Slab', serif;
-    }
-
-    .questions__copy{
-        width: 60%;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        font-family: 'Signika Negative', sans-serif;
-        font-size: 20px;
-    }
-
-    .botoncito {
-        display: inline-block;
-        background-color: #2091F9;
-        justify-self: center;
-        color: #fff;
-        text-decoration: none;
-        padding: 13px 30px;
-        border-radius: 32px;
-    }
-    
-}
-
-/*CALL TO ACTION*/
 
 /*INGRESAR*/
 
@@ -573,15 +663,15 @@ body{
     font-weight: 900;
     font-size:2rem;
     background:rgba(129, 158, 255, 0.3);
+    font-family: 'Roboto Slab', serif;
+}
 
-    .accordion {
-        width: 70%;
-        margin: auto;
-        font-size: 1.2rem;
-        padding-top: 8rem;
-        position: relative;
-
-    }
+.accordion {
+    width: 70%;
+    margin: auto;
+    font-size: 1.2rem;
+    padding-top: 8rem;
+    position: relative;
 
 }
 
