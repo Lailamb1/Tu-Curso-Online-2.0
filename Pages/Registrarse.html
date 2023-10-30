@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="¡Bienvenido a nuestra página de registro! Aquí es donde comienza tu emocionante viaje de aprendizaje en línea. Regístrate para obtener acceso a una amplia gama de cursos de alta calidad impartidos por profesionales de la industria. Únete a nuestra comunidad global de estudiantes apasionados y comienza a mejorar tus habilidades. Registrarse es rápido y sencillo, ¡así que no esperes más para embarcarte en tu experiencia educativa en línea!">
     <title>Registrarse</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Roboto+Slab&family=Signika+Negative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Poltawski+Nowy:ital,wght@1,600&family=Roboto+Slab&family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel = "stylesheet" href = "../Styles/scss.css">
 
 </head>
 
-<body>
+<body class = "secundarias">
 
     <header>
+
+        <a id="top"></a>
 
         <!-- LOGO -->
 
@@ -24,6 +27,14 @@
         </a>
 
         <!-- LOGO -->
+
+        <!-- BANNER -->
+
+        <div class="banner">
+            <p>Tu curso online 2.0</p>
+        </div>
+
+        <!-- BANNER -->
 
         <!-- NAVBAR -->
 
@@ -36,7 +47,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="./Sobre-nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./Preguntas-frecuentes.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./Ingresar.html">Ingresar</a>
@@ -46,12 +57,12 @@
                     Cursos
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./Cursos.html">Ciencia</a></li>
-                        <li><a class="dropdown-item" href="./Cursos.html">Ingeniería</a></li>
-                        <li><a class="dropdown-item" href="./Cursos.html">Negocios</a></li>
-                        <li><a class="dropdown-item" href="./Cursos.html">Salud y medicina</a></li>
-                        <li><a class="dropdown-item" href="./Cursos.html">Desarrollo personal</a></li>
-                        <li><a class="dropdown-item" href="./Cursos.html">Programación</a></li>
+                        <li><a class="dropdown-item" href="./cursos.html#ciencia">Ciencia</a></li>
+                        <li><a class="dropdown-item" href="./cursos.html#ingenieria">Ingeniería</a></li>
+                        <li><a class="dropdown-item" href="./cursos.html#negocios">Negocios</a></li>
+                        <li><a class="dropdown-item" href="./cursos.html#salud y medicina">Salud y medicina</a></li>
+                        <li><a class="dropdown-item" href="./cursos.html#desarrollo personal">Desarrollo personal</a></li>
+                        <li><a class="dropdown-item" href="./cursos.html#programacion">Programación</a></li>
                     </ul>
                 </li>
                 </ul>
@@ -84,22 +95,44 @@
                 <p>Especialidad</p>
 
                 <label>
-                    <input type="checkbox" name="role" value="student"> Estudiante<br/><br/>
+                    <input type="checkbox" name="role" value="student"> Estudiante
+                </label>
+                <br/><br/>
+                <label>
                     <input type="checkbox" name="role" value="student"> Profesor
                 </label>
 
                 <p>Intereses</p>
 
-                <label>
-
-                <input type="checkbox"/> Programacion<br/><br/>
-                <input type="checkbox"/> Ciencia <br/><br/>
-                <input type="checkbox"/> Ingenieria<br/><br/>
-                <input type="checkbox"/> Negocios <br/><br/>
-                <input type="checkbox"/> Salud y medicina<br/><br/>
-                <input type="checkbox"/> Desarrollo personal <br/><br/>
-
+                <label for="programacion">
+                    <input type="checkbox" id="programacion"> Programación
                 </label>
+                <br/><br/>
+
+                <label for="ciencia">
+                    <input type="checkbox" id="ciencia"> Ciencia
+                </label>
+                <br/><br/>
+
+                <label for="ingenieria">
+                    <input type="checkbox" id="ingenieria"> Ingeniería
+                </label>
+                <br/><br/>
+
+                <label for="negocios">
+                    <input type="checkbox" id="negocios"> Negocios
+                </label>
+                <br/><br/>
+
+                <label for="salud">
+                    <input type="checkbox" id="salud"> Salud y Medicina
+                </label>
+                <br/><br/>
+
+                <label for="desarrollo">
+                    <input type="checkbox" id="desarrollo"> Desarrollo Personal
+                </label>
+                <br/><br/>
 
             </div>
 
@@ -114,25 +147,41 @@
         <img class="image-container" src="../img/register.png" alt="Personas de register">
     </div>
 
+    <a href="#top" class="scroll-to-top"><i class='fas fa-arrow-up'></i></a>
+
     <!-- ZONA DE FORMULARIO -->
 
     <!-- FOOTER -->
 
-    <footer>
-        <div class = "container-footer">
-
-            <div class = "box-footer">
-                <p>Contacto</p>
-                <p>Terminos y condiciones</p>
-                <p>Boton de arrepentimiento</p>
-                <p>Tienda</p>
-                <p>Afiliados</p>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../img/LOGO.png" alt="Logo">
+                    </a>
+                </figure>
             </div>
-
-            <div class="copyright">
-            Copyright © 1999-2020 Tu curso online 2.0 S.R.L.
+            <div class="box1">
+                <h2>SOBRE NOSOTROS</h2>
+                <a href="#">Contacto</a>
+                <a href="Cursos.html">Tienda</a>
+                <a href="#">Afiliados</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Botón de arrepentimiento</a>
             </div>
-
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Tu curso online 2.0</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
 

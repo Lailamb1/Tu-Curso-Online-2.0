@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <meta name="Descripción" content="Descubre un mundo de aprendizaje en nuestra plataforma de cursos en línea. Impulsa tu carrera con una amplia variedad de cursos de alta calidad impartidos por expertos. Aprende a tu ritmo, desde cualquier lugar, y adquiere nuevas habilidades que te ayudarán a alcanzar tus objetivos profesionales. ¡Inscríbete y comienza tu viaje de aprendizaje hoy mismo!">
     <title>Cursos online</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Roboto+Slab&family=Signika+Negative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Poltawski+Nowy:ital,wght@1,600&family=Roboto+Slab&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel = "stylesheet" href = "./Styles/scss.css">
 
 </head>
@@ -18,13 +18,24 @@
 
     <header>
 
-        <!-- LOGO -->
-
-        <a href="index.html">
-            <img class="logo" src="./img/LOGO.png" alt="logo">
-        </a>
+        <a id="top"></a>
 
         <!-- LOGO -->
+
+        <div class = "logo">
+        <a href="index.html"><img class = "logo"src="./img/LOGO.png" alt="logo"></a>
+            
+        </div>
+
+        <!-- LOGO -->
+
+        <!-- BANNER -->
+
+        <div class="banner">
+            <p>Tu curso online 2.0</p>
+        </div>
+
+        <!-- BANNER -->
 
         <!-- NAVBAR -->
 
@@ -37,7 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="./Pages/Sobre-nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./Pages/Preguntas-frecuentes.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./Pages/Ingresar.html">Ingresar</a>
@@ -47,81 +58,93 @@
                     Cursos
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./Pages/Cursos.html">Ciencia</a></li>
-                    <li><a class="dropdown-item" href="./Pages/Cursos.html">Ingeniería</a></li>
-                    <li><a class="dropdown-item" href="./Pages/Cursos.html">Negocios</a></li>
-                    <li><a class="dropdown-item" href="./Pages/Cursos.html">Salud y medicina</a></li>
-                    <li><a class="dropdown-item" href="./Pages/Cursos.html">Desarrollo personal</a></li>
-                    <li><a class="dropdown-item" href="./Pages/Cursos.html">Programación</a></li>
+                        <li><a class="dropdown-item" href="./Pages/cursos.html#ciencia">Ciencia</a></li>
+                        <li><a class="dropdown-item" href="./Pages/cursos.html#ingenieria">Ingeniería</a></li>
+                        <li><a class="dropdown-item" href="./Pages/cursos.html#negocios">Negocios</a></li>
+                        <li><a class="dropdown-item" href="./Pages/cursos.html#salud y medicina">Salud y medicina</a></li>
+                        <li><a class="dropdown-item" href="./Pages/cursos.html#desarrollo personal">Desarrollo personal</a></li>
+                        <li><a class="dropdown-item" href="./Pages/cursos.html#programacion">Programación</a></li>
                     </ul>
                 </li>
                 </ul>
             </div>
             </div>
         </nav>
-    
-        <!-- NAVBAR -->
-
-        <!-- CARROUSEL -->
 
     </header>
-        <img class="persona" src = "./img/Persona.jpg" alt="persona viendo un monitor sonriendo">
-            <div class="texto-principal">
-                    <p>Impulsa tu carrera laboral con cursos de las mejores universidades, centralizados en nuestra plataforma </p>
-            </div>
-        </div>
 
-        <!-- CARROUSEL -->
+
+    <!-- NAVBAR -->
+
+    <!-- CARROUSEL -->
+
+
+    <div class="texto-principal">   
+        <h1>Impulsa tu carrera laboral con cursos de las mejores universidades, centralizados en nuestra plataforma </h1>
+    </div>
+
+    <div class="universidades"> 
+        <p>Empresas como<span class="empresas"> Google, Amazon o Facebook</span> utilizan nuestros cursos para formar y captar nuevos empleados</p>
+        <img src = "./img/harvard.png" alt="logo harvard">
+
+        <img src = "./img/massachusetts.png" alt="logo massachusetts">
+
+        <img src = "./img/stanford.png" alt="logo stanford">
+
+        <img src = "./img/complutense.png" alt="logo complutense">
+    </div>
+
+    <!-- CARROUSEL -->
 
     <!-- ZONA QUE ESPERAR -->
 
     <div class = "queesperar">
         <div class = "titulo">
-            <h2>Que esperar de nuestros cursos</h2>
+            <h2>Qué esperar de nuestros cursos</h2>
         </div>
         <div class = "items-container">
         <ul class="row">
             <li class = "items">
                 <i class='fas fa-smile'></i>
-                <h3>Aprende a tu ritmo</h3>
+                <p class = "titulito">Aprende a tu ritmo</p>
                 <p>Disfruta aprendiendo desde casa, sin horarios y a tu ritmo. Tú decides cuándo seguir con cada unidad.</p>
             </li>
             <li class = "items">
                 <i class='fa fa-thumbs-up'></i>
-                <h3>Aprende de los mejores profesionales</h3>
+                <p class = "titulito">Aprende de los mejores profesionales</p>
                 <p>Aprende los métodos y técnicas más útiles con los mejores profesionales del sector creativo.</p>
             </li>
             <li class = "items">
                 <i class='fas fa-user-tie'></i>
-                <h3>Conoce a profesores expertos</h3>
+                <p class = "titulito">Conoce a profesores expertos</p>
                 <p>Cada profesor te transmitirá sus conocimientos con pasión, ofreciéndote explicaciones claras y una perspectiva profesional en cada lección.</p>
             </li>
             <li class = "items">
                 <i class='fas fa-medal'></i>
-                <h3>Consigue un certificado con cada curso</h3>
+                <p class = "titulito">Consigue un certificado con cada curso</p>
                 <p>Si eres Plus, obtén un certificado personalizado y firmado por tu profesor. Compártelo en tu porfolio, en las redes sociales o donde quieras.</p>
             </li>
         </ul>
         <ul class="row">
             <li class = "items">
                 <i class='fa fa-laptop'></i>
-                <h3>Ponte en primera fila</h3>
+                <p class = "titulito"p class = "titulito">Ponte en primera fila</p>
                 <p>La alta calidad de los vídeos permitirá que no te pierdas ni un solo detalle. Gracias al acceso ilimitado, podrás ver las lecciones todas las veces que necesites para perfeccionar tus habilidades.</p>
             </li>
             <li class = "items">
                 <i class='fa fa-users'></i>
-                <h3>Comparte conocimientos e ideas</h3>
+                <p class = "titulito">Comparte conocimientos e ideas</p>
                 <p>Pregunta, pide opinión y ofrece soluciones. Comparte tu experiencia de aprendizaje con otros estudiantes de la comunidad tan apasionados por la creatividad como tú.
                 </p>
             </li>
             <li class = "items">
                 <i class='fas fa-handshake'></i>
-                <h3>Conecta con una comunidad creativa global</h3>
+                <p class = "titulito"p class = "titulito">Conecta con una comunidad creativa global</p>
                 <p>Esta comunidad cuenta con millones de usuarios de todo el mundo, personas curiosas y con ganas de explorar y expresar su creatividad.</p>
             </li>
             <li class = "items">
                 <i class='fas fa-user-check'></i>
-                <h3>Realiza cursos profesionalmente producidos</h3>
+                <p class = "titulito">Realiza cursos profesionalmente producidos</p>
                 <p>Tu curso online selecciona cuidadosamente los profesores y produce cada curso internamente para garantizar una experiencia de aprendizaje online excelente.</p>
             </li>
         </ul>
@@ -133,10 +156,10 @@
     <!-- ZONA CALL TO ACTION -->
 
     <div class="calltoaction">
-        <h2 class="pregunta">¿Estas listo para capacitarte en tu nuevo estilo de vida?</h2>
+        <h2>¿Estás listo para capacitarte en tu nuevo estilo de vida?</h2>
         <p class="questions__copy">Puedes realizar los cursos a tu ritmo y desde cualquier dispositivo online.
             Tienen una duración media de 30-40 horas (5-7 semanas).
-            Una vez que los termines, puedes obtener un certificado y subirlo a Linkedin.</p>
+            Una vez que los termines, puedes obtener un certificado y subirlo a LinkedIn.</p>
         <a href="./Pages/Cursos.html" class="botoncito">Aprende ahora</a>
     </div>
 
@@ -145,70 +168,80 @@
         <!-- ZONA DE CURSOS -->
 
     <div class="seccion">
-        <h1>CURSOS</h1>
+        <h3>CURSOS</h3>
     </div>
 
     <div class = "contenedor-cursos">
 
-        <div class="cursos">  
+        <div class="cursos">
+            <a href = "./Pages/Cursos.html#ciencia">
             <section>
-                <img class='articulo-imagen' src = './img/Ciencia.jpg'>
+                <img class='articulo-imagen' src = './img/Ciencia.jpg' alt="Curso de ciencia">
                 <div class="articulo-principal">
-                    <p>Curso de desarollo ciencia</p>
+                    <p>Cursos de ciencia</p>
                 </div>
             </section>
+            </a>
+        </div>    
+
+        <div class="cursos">
+            <a href = "./Pages/Cursos.html#ingenieria">
+            <section>
+                <img class='articulo-imagen' src = './img/Ingenieria.jpg' alt="Curso de ingenieria">
+                <div class="articulo-principal">
+                    <p>Cursos ingeniería</p>
+                </div>
+            </section>
+        </a>
+
+        </div>    
+
+
+        <div class="cursos"> 
+            <a href = "./Pages/Cursos.html#ingenieria">
+            <section>
+                <img class='articulo-imagen' src = './img/Negocios.jpg' alt="Curso de negocios">
+                <div class="articulo-principal">
+                    <p>Cursos de negocios</p>
+                </div>
+            </section>
+        </a>
 
         </div>    
 
         <div class="cursos">  
+            <a href = "./Pages/Cursos.html#salud y medicina">
             <section>
-                <img class='articulo-imagen' src = './img/Ingenieria.jpg'>
+                <img class='articulo-imagen' src = './img/Salud-y-Medicina.jpg' alt="Curso de salud y medicina">
                 <div class="articulo-principal">
-                    <p>Curso de desarollo ingeniería</p>
+                    <p>Cursos de salud y medicina</p>
                 </div>
             </section>
-
-        </div>    
-
-
-        <div class="cursos">  
-            <section>
-                <img class='articulo-imagen' src = './img/Negocios.jpg'>
-                <div class="articulo-principal">
-                    <p>Curso de desarollo negocios</p>
-                </div>
-            </section>
+        </a>
 
         </div>    
 
         <div class="cursos">  
+            <a href = "./Pages/Cursos.html#desarrollo personal">
             <section>
-                <img class='articulo-imagen' src = './img/Salud-y-Medicina.jpg'>
+                <img class='articulo-imagen' src = './img/Desarrollo-personal.jpg' alt="Curso de desarrollo personal">
                 <div class="articulo-principal">
-                    <p>Curso de desarollo salud y medicina</p>
+                    <p>Cursos de desarrollo personal</p>
                 </div>
             </section>
+        </a>
 
         </div>    
 
-        <div class="cursos">  
+        <div class="cursos"> 
+            <a href = "./Pages/Cursos.html#programacion"> 
             <section>
-                <img class='articulo-imagen' src = './img/Desarrollo-personal.jpg'>
+                <img class='articulo-imagen' src = './img/Programacion.jpg' alt="Curso de programacion">
                 <div class="articulo-principal">
-                    <p>Curso de desarollo personal</p>
+                    <p>Cursos de programación</p>
                 </div>
             </section>
-
-        </div>    
-
-        <div class="cursos">  
-            <section>
-                <img class='articulo-imagen' src = './img/Programacion.jpg'>
-                <div class="articulo-principal">
-                    <p>Curso de desarollo programacion</p>
-                </div>
-            </section>
-
+        </a>
         </div>    
 
     </div>
@@ -248,25 +281,42 @@
         </ul>
     </div>
 
+    <a href="#top" class="scroll-to-top"><i class='fas fa-arrow-up'></i></a>
+
     <!-- ZONA OPINIONES -->
 
     <!-- FOOTER -->
 
-    <footer>
-        <div class = "container-footer">
-
-            <div class = "box-footer">
-                <p>Contacto</p>
-                <p>Terminos y condiciones</p>
-                <p>Boton de arrepentimiento</p>
-                <p>Tienda</p>
-                <p>Afiliados</p>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../img/LOGO.png" alt="Logo">
+                    </a>
+                </figure>
             </div>
-
-            <p class="copyright">Copyright © 1999-2020 Tu curso online 2.0 S.R.L. </p>
-            
+            <div class="box1">
+                <h2>SOBRE NOSOTROS</h2>
+                <a href="#">Contacto</a>
+                <a href="./Pages/Cursos.html">Tienda</a>
+                <a href="#">Afiliados</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Botón de arrepentimiento</a>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                </div>
+            </div>
         </div>
-    
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Tu curso online 2.0</b> - Todos los Derechos Reservados.</small>
+        </div>
     </footer>
 
     <!-- FOOTER -->
