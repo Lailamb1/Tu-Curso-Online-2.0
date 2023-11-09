@@ -220,6 +220,7 @@ body{
     align-items: center;
     max-width: 70%;
     margin: 0 auto;
+    padding: 0.5rem;
     p{
         font-family: 'Roboto Slab', serif;
         font-size: 20px;
@@ -237,16 +238,15 @@ body{
 @media (max-width: 1300px) {
     .universidades {
         flex-direction: column;
-        margin: 3rem;
-
+        margin-left: 5em;
+        margin-right: 5em;
         p {
             flex-basis: 100%;
             text-align: center;
         }
-
-        img {
-            margin: 1rem;
-            text-align:center;
+    
+        img{
+            flex-basis: 100%;
         }
     }
 }
@@ -254,28 +254,44 @@ body{
 @media (max-width: 767px) {
     .universidades {
         flex-direction: column;
-        margin: 3rem;
-        flex-basis: 100%;
 
+        
+    p {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    img{
+        flex-basis: 100%;
+    }
+    }
+}
+
+@media (max-width: 500px) {
+    .universidades {
+        flex-direction: column;
+        margin-left: 5em;
+        margin-right: 5em;
         p {
             flex-basis: 100%;
+            text-align: center;
         }
-
-        img {
-            margin: 1rem;
+    
+        img{
+            flex-basis: 100%;
         }
     }
 }
 
 /*ZONA QUE ESPERAR*/
 
-
-
-/*ZONA QUE ESPERAR*/
-
 .queesperar{
     text-align: center;
     background-color: white;
+    padding-top: 2rem;
+    h2{
+        padding-bottom: 0.5rem;
+    }
 }
 
 .titulo{
@@ -369,9 +385,9 @@ body{
 
 .calltoaction{
     display: grid;
-    gap: 2em;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    gap: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     background-color: white;
     margin-top: 16px;
 
@@ -394,7 +410,7 @@ body{
         justify-self: center;
         color: #fff;
         text-decoration: none;
-        padding: 13px 30px;
+        padding: 13px 50px;
         border-radius: 32px;
         font-weight: bold;
         transition: background-color 0.3s;
@@ -479,7 +495,6 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
     }
 
     li{
@@ -487,7 +502,7 @@ body{
         margin: 20px;
         padding: 10px;
         background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 4px 0px grey;
         text-align: left;
 
     }
@@ -495,7 +510,6 @@ body{
     img{
         max-width: 100%;
         border-radius: 2%;
-
     }
 
     p{
@@ -1008,20 +1022,30 @@ body{
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1140px){
     .pie-pagina {
         .grupo-1{
             width: 90%;
             grid-template-columns: repeat(1, 1fr);
             grid-gap:30px;
             padding: 35px 0px;
+            text-align: center;
+        }
+        .box1{
+            display: none;
         }
     }
 }
 
-@media screen and (max-width: 500px) {
-    .grupo-1{
-        text-align: center;
+@media screen and (max-width:500px){
+    .pie-pagina {
+        .grupo-1{
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap:30px;
+            padding: 35px 0px;
+            text-align: center;
+        }
     }
 }
 
